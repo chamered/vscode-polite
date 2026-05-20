@@ -1,0 +1,25 @@
+{
+  "name": "polite-lang",
+  "displayName": "polite-lang",
+  "description": "poLite Language Support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "polite",
+      "aliases": ["poLite", "polite"],
+      "extensions": [".plt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "polite",
+      "scopeName": "source.polite",
+      "path": "./syntaxes/polite.tmLanguage.json"
+    }]
+  }
+}

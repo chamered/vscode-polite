@@ -1,0 +1,35 @@
+{
+    "name": "poLite",
+    "scopeName": "source.polite",
+    "patterns": [
+        {
+            "name": "comment.block.polite",
+            "begin": "/\\*",
+            "end": "\\*/"
+        },
+        {
+            "name": "keyword.control.polite",
+            "match": "\\b(if|otherwise|while|do this|thanks|pls)\\b"
+        },
+        {
+            "name": "storage.type.polite",
+            "match": "\\b(int|float|bool|char|string)\\b"
+        },
+        {
+            "name": "support.function.polite",
+            "match": "\\b(say)\\b"
+        },
+        {
+            "name": "constant.language.boolean.polite",
+            "match": "\\b(true|false)\\b"
+        },
+        {
+            "name": "constant.numeric.polite",
+            "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+        },
+        {
+            "name": "keyword.operator.polite",
+            "match": "(=|\\+|-|\\*|/|>|<)"
+        }
+    ]
+}
