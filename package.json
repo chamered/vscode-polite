@@ -25,6 +25,10 @@
       "language": "polite",
       "scopeName": "source.polite",
       "path": "./syntaxes/polite.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "polite",
+      "path": "./snippets.json"
     }]
   }
 }

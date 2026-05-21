@@ -1,0 +1,62 @@
+{
+    "Type Int": {
+        "prefix": "int",
+        "body": "int ",
+        "description": "Integer type"
+    },
+    "Type Float": {
+        "prefix": "float",
+        "body": "float ",
+        "description": "Float type"
+    },
+    "Type Bool": {
+        "prefix": "bool",
+        "body": "bool ",
+        "description": "Boolean type"
+    },
+    "Type String": {
+        "prefix": "string",
+        "body": "string ",
+        "description": "String type"
+    },
+    "Keyword If": {
+        "prefix": "if",
+        "body": "if ",
+        "description": "If keyword"
+    },
+    "Keyword Otherwise": {
+        "prefix": "otherwise",
+        "body": "otherwise ",
+        "description": "Otherwise keyword"
+    },
+    "Keyword While": {
+        "prefix": "while",
+        "body": "while ",
+        "description": "While keyword"
+    },
+    "Keyword Do This": {
+        "prefix": "do this",
+        "body": "do this ",
+        "description": "Do This keyword"
+    },
+    "Keyword Thanks": {
+        "prefix": "thanks",
+        "body": "thanks ",
+        "description": "Thanks keyword"
+    },
+    "Keyword Return": {
+        "prefix": "return",
+        "body": "return ",
+        "description": "Return keyword"
+    },
+    "Keyword Pls": {
+        "prefix": "pls",
+        "body": "pls ",
+        "description": "Pls keyword"
+    },
+    "Function Say": {
+        "prefix": "say",
+        "body": "say($0)",
+        "description": "Say function"
+    }
+}
