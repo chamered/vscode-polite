@@ -3,21 +3,41 @@
     "scopeName": "source.polite",
     "patterns": [
         {
+            "name": "comment.line.double-slash.polite",
+            "begin": "//",
+            "end": "$"
+        },
+        {
             "name": "comment.block.polite",
             "begin": "/\\*",
             "end": "\\*/"
         },
         {
             "name": "keyword.control.polite",
-            "match": "\\b(if|otherwise|while|do this|thanks|pls)\\b"
+            "match": "\\b(const|if|otherwise|while|do this|thanks|return|pls)\\b"
         },
         {
             "name": "storage.type.polite",
-            "match": "\\b(int|float|bool|char|string)\\b"
+            "match": "\\b(int|float|bool|char|string|void)\\b"
         },
         {
             "name": "support.function.polite",
             "match": "\\b(say)\\b"
+        },
+        {
+            "name": "entity.name.function.polite",
+            "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*\\()"
+        },
+        {
+            "name": "string.quoted.double.polite",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.polite",
+                    "match": "\\\\."
+                }
+            ]
         },
         {
             "name": "constant.language.boolean.polite",
@@ -29,7 +49,7 @@
         },
         {
             "name": "keyword.operator.polite",
-            "match": "(=|\\+|-|\\*|/|>|<)"
+            "match": "(&&|\\|\\||!|=|\\+|-|\\*|/|>|<)"
         }
     ]
 }

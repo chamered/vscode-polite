@@ -1,8 +1,13 @@
 {
   "name": "polite-lang",
-  "displayName": "polite-lang",
+  "displayName": "poLite",
   "description": "poLite Language Support",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "chamered",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chamered/polite-vscode-extension.git"
+  },
   "engines": {
     "vscode": "^1.120.0"
   },
