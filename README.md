@@ -1,42 +1,58 @@
-# polite-lang README
+# poLite Language Support for VS Code
 
 Welcome to the official Visual Studio Code extension for **poLite**! 
+This extension provides rich syntax highlighting and intelligent code snippets for the courteous, strongly-typed *poLite* programming language.
 
-poLite is a custom, minimal, and "polite" C-like programming language built using Flex and Bison. This extension provides syntax highlighting to make reading and writing `.plt` files a colorful and pleasant experience.
+## ✨ Features
 
-## Features
+- **Syntax Highlighting:** Full tokenization for all poLite structural keywords (`pls`, `do this`, `thanks`, `say`), data types, and operators.
+- **Smart Snippets:** Autocompletion for common language constructs (e.g., function declarations, `if-otherwise` blocks, and `while` loops).
+- **Comment Support:** Accurate toggling and highlighting for single-line comments (`//`).
+- **Bracket Matching:** Seamless pairing for parentheses and logical blocks.
 
-This extension provides full syntax highlighting for the poLite language. Specifically, it recognizes and highlights:
+## 📝 Syntax Preview
 
-* **Polite Syntax:** `pls` (replaces `;`), `do this` (replaces `{`), `thanks` (replaces `}`)
-* **Control Flow:** `if`, `otherwise` (replaces `else`), `while`
-* **Data Types:** `int`, `float`, `bool`, `char`, `string`
-* **Built-in Functions:** `say()` (replaces `print()`)
-* **Literals:** Booleans (`true`, `false`) and numbers
-* **Comments:** C-style block comments (`/* ... */`)
+When writing your `.plt` files, the extension will automatically recognize and format your code politely:
 
-![poLite syntax highlighting in action](images/screenshot.png)
+```text
+const string WELCOME = "Welcome to poLite!" pls
 
-## Requirements
+int calculate_age() do this
+    int age = 20 pls
+    return age pls
+thanks
 
-There are no specific requirements to use this syntax highlighting extension. 
+if (true) do this
+    say(WELCOME) pls
+thanks
+```
 
-However, to actually compile and run poLite code, you will need your custom poLite compiler (built with Flex and Bison) installed on your system.
+## 🚀 Installation (Manual)
 
-## Extension Settings
+Since this extension is tailored for academic purposes and not hosted on the VS Code Marketplace, you can install it locally in just a few steps:
 
-This extension currently does not add any custom VS Code settings. It works entirely out of the box: simply open any `.plt` file and the polite syntax highlighting will be applied automatically.
+### Method 1: Using the VSIX package
+1. Download the latest `polite-x.x.x.vsix` file from the Releases page.
+2. Open Visual Studio Code.
+3. Go to the **Extensions** view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+4. Click the three dots `...` in the top right corner of the Extensions panel.
+5. Select **"Install from VSIX..."** and choose the downloaded file.
 
-## Known Issues
+### Method 2: From Source
+1. Clone this repository:
+   ```bash
+   git clone [https://github.com/yourusername/vscode-polite.git](https://github.com/yourusername/vscode-polite.git)
+   ```
+2. Open the cloned folder in VS Code.
+3. Press `F5` to open a new window with the extension loaded (Extension Development Host).
+4. Open any `.plt` file to see the highlighting in action!
 
-No known issues at this time. 
+## 🛠️ Development
 
-*(Note: As the poLite language expands in future releases—such as adding full relational and logical expressions—this extension will be updated accordingly).*
+To modify the syntax rules or add new snippets:
+1. Edit the `syntaxes/polite.tmLanguage.json` file for TextMate grammar rules.
+2. Edit the `snippets/snippets.json` file to expand the autocompletion library.
+3. Reload the Extension Development Host window (`Ctrl+R` / `Cmd+R`) to test your changes.
 
-## Release Notes
-
-### 1.0.0
-
-* Initial release of the polite-lang extension.
-* Added basic syntax highlighting for `.plt` files.
-* Support for polite keywords, data types, numbers, booleans, and block comments.
+## 📜 License
+Developed for academic purposes.
