@@ -1,18 +1,19 @@
 {
   "name": "vscode-polite",
-  "displayName": "poLite",
-  "description": "poLite Language Support",
+  "displayName": "poLite Language Support",
+  "description": "Official Visual Studio Code extension for the poLite programming language. Provides polite syntax highlighting and code snippets.",
   "version": "1.0.0",
   "publisher": "chamered",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chamered/polite-vscode-extension.git"
+    "url": "https://github.com/chamered/vscode-polite.git"
   },
   "engines": {
     "vscode": "^1.120.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
     "languages": [{

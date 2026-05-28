@@ -1,62 +1,57 @@
 {
-    "Type Int": {
-        "prefix": "int",
-        "body": "int ",
-        "description": "Integer type"
+    "do this block": {
+        "prefix": "do",
+        "body": [
+            "do this",
+            "\t$0",
+            "thanks"
+        ],
+        "description": "Create a polite code block"
     },
-    "Type Float": {
-        "prefix": "float",
-        "body": "float ",
-        "description": "Float type"
-    },
-    "Type Bool": {
-        "prefix": "bool",
-        "body": "bool ",
-        "description": "Boolean type"
-    },
-    "Type String": {
-        "prefix": "string",
-        "body": "string ",
-        "description": "String type"
-    },
-    "Keyword If": {
+    "if statement": {
         "prefix": "if",
-        "body": "if ",
-        "description": "If keyword"
+        "body": [
+            "if ($1) do this",
+            "\t$0",
+            "thanks"
+        ],
+        "description": "Polite if statement"
     },
-    "Keyword Otherwise": {
-        "prefix": "otherwise",
-        "body": "otherwise ",
-        "description": "Otherwise keyword"
+    "if otherwise statement": {
+        "prefix": "ifo",
+        "body": [
+            "if ($1) do this",
+            "\t$2",
+            "thanks otherwise do this",
+            "\t$0",
+            "thanks"
+        ],
+        "description": "Polite if-otherwise statement"
     },
-    "Keyword While": {
+    "while loop": {
         "prefix": "while",
-        "body": "while ",
-        "description": "While keyword"
+        "body": [
+            "while ($1) do this",
+            "\t$0",
+            "thanks"
+        ],
+        "description": "Polite while loop"
     },
-    "Keyword Do This": {
-        "prefix": "do this",
-        "body": "do this ",
-        "description": "Do This keyword"
+    "function declaration": {
+        "prefix": "func",
+        "body": [
+            "${1|int,float,string,bool,void|} ${2:name}() do this",
+            "\t$0",
+            "\treturn pls",
+            "thanks"
+        ],
+        "description": "Declare a new polite function"
     },
-    "Keyword Thanks": {
-        "prefix": "thanks",
-        "body": "thanks ",
-        "description": "Thanks keyword"
-    },
-    "Keyword Return": {
-        "prefix": "return",
-        "body": "return ",
-        "description": "Return keyword"
-    },
-    "Keyword Pls": {
-        "prefix": "pls",
-        "body": "pls ",
-        "description": "Pls keyword"
-    },
-    "Function Say": {
+    "say print": {
         "prefix": "say",
-        "body": "say($0)",
-        "description": "Say function"
+        "body": [
+            "say($1) pls$0"
+        ],
+        "description": "Print statement"
     }
 }
